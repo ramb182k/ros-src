@@ -115,9 +115,13 @@ include_directories(
 include
  ${catkin_INCLUDE_DIRS}
 )
-
+add_executable(hello hello.cpp)
 add_executable(subpose subpose.cpp)
+add_executable(turtles turtles.cpp)
+target_link_libraries(hello ${catkin_LIBRARIES})
 target_link_libraries(subpose ${catkin_LIBRARIES})
+target_link_libraries(turtles ${catkin_LIBRARIES})
+
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/ram.cpp
