@@ -117,10 +117,14 @@ include
 )
 add_executable(hello hello.cpp)
 add_executable(subpose subpose.cpp)
-add_executable(turtles turtles.cpp)
+add_executable(pubvel pub_vel.cpp)
+add_executable(log_msgs log_msgs.cpp)
+add_executable(throttle_msgs throttle_msgs.cpp)
 target_link_libraries(hello ${catkin_LIBRARIES})
 target_link_libraries(subpose ${catkin_LIBRARIES})
-target_link_libraries(turtles ${catkin_LIBRARIES})
+target_link_libraries(pubvel ${catkin_LIBRARIES})
+target_link_libraries(log_msgs ${catkin_LIBRARIES})
+target_link_libraries(throttle_msgs ${catkin_LIBRARIES})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
